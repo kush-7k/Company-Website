@@ -1,0 +1,481 @@
+/************************************************ Editing the home page ***********************************************/
+.grid>main>.example-1>div>h1{
+    font-family: 'Bangers', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    text-decoration: underline;
+}
+/*Adding font styles to all the headings*/
+.example-2>div>h2, .example-3>div>h2{
+    font-family: 'Cormorant SC', serif;
+    font-size: 2.7em;
+    color: #b2101f;
+}
+.ad1>h3{
+    font-family: 'Permanent Marker', cursive;
+    border: 3px;
+}
+.boxs{
+    height: 100%;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 9px;
+    resize: none;
+}
+.ch{
+    color: blue;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 12x;
+    border-radius: 6px;
+    background: yellow;
+    cursor: pointer;
+}
+.h4{
+    
+    text-align: center;
+    font-size: 1.5em;
+    color: #b2101f;
+}
+footer>h5{
+    color: #ffd662ff;
+    font-size: 1.3em;
+}
+p{
+    font-family: 'Mali', cursive;
+    font-size: 1.2em;
+}
+/*the grid class helps to construct the whole html webpage using gri template columns and rows*/
+.grid{
+    display: grid;
+    /** With CSS rid we are able to input layout with columns**/
+    grid-template-columns: repeat(4,25%);/**numbers cannot exceed 100%**/
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header aside"
+    "main main main aside"
+    "footer footer footer footer";
+    background-color: #ffffff;
+    margin: 0%;
+}
+/*editing header*/
+header{
+    /** next we will use the property of position , using this we will be able to define that where the header element is going to be placed**/
+    grid-area: header;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 110px;
+    background-color: #17252A;
+    display: grid;
+   grid-template-columns: 75% 25%;
+    align-items: center;
+}
+.grid>main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    background: rgb(210,250,255);
+    background: radial-gradient(circle, rgba(210,250,255,1) 0%, #3aafa9 100%);
+}
+/* section of home page */
+.example-1{
+    margin-top: 15%;
+    text-align: center;
+}
+.example-2{
+    text-align: center;
+
+}
+header>div{
+    height: 100px;
+    width: auto;
+}
+header>div>a>img{
+     width: auto;
+     height: 100%;
+}
+header>nav>ul{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    list-style: none;
+}
+header>nav>ul>li{
+    padding: 0px 15px;
+    text-align: right;
+}
+.example-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    color: darkblue;
+}
+/* Editing the button of header */
+.btn{
+    color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 12x;
+  border-radius: 6px;
+  background: #3aafa9;
+  cursor: pointer;
+}
+
+.example-2>div>figure{
+    height: auto;
+    width: 375px;
+}
+.example-2>div>figure>img{
+    width: 100%;
+    height: auto;
+    margin-left: 4%;
+}
+/* MAking site attractive */
+.grid>main>section:nth-child(2)>div:nth-child(1)
+{
+    order: 1;
+}
+.grid>main>section:nth-child(2)>div:nth-child(2)
+{
+    order: 2;
+}
+.example-3>div:nth-child(1){
+   background-image: url('../img/background5.png');
+   background-size: cover;
+   text-align: center;
+   color: #3aafa9;
+}
+.example-3>div>h2{
+    color: orange;
+}
+.example-3>div+div+div>figure>img{
+    width: 375px;
+    height: auto;
+    align-items: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.example-3>div+div+div>figure>figcaption{
+    text-align: center;
+}
+/* Buttons of aside element */
+.btn-1{
+    color: greenyellow;
+    background-color: #05386B;
+}
+.btn-2{
+    background-color: #05386B;
+    color: darkorange;
+}
+/*Editing the aside element*/
+/* Aside element editing */
+.grid>aside{
+    margin-left: 0%;
+    margin-top: 15%;
+    grid-area: aside;
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: black;
+    align-items: center;
+}
+.grid>aside>div>h3{
+    text-align: top;
+    color: #feffff;
+    font-size: 2.5em;
+}
+.grid>aside>div>p{
+    font-family: 'Mali', cursive;
+    font-size: 0.75em;
+    color: #def2f1;
+}
+figcaption{
+    color: #b2101f;
+    font-family: 'Orbitron', sans-serif;
+}
+.grid>aside>div{
+    width: 80%;
+    margin: auto;
+}
+/* Editing global footer */
+footer{
+    grid-area: footer;
+    display: grid;
+    height: 375px;
+    width: 100%;
+    background-image: url('../img/footer.png');
+    background-size: cover;
+    grid-template-rows: repeat(4,25%);
+    align-items: center;
+}
+footer{
+    text-decoration: none;
+    color: white;
+}
+.COLUMN1 a,.COLUMN2 a, .COLUMN3 a , .COLUMN4 a{
+    display: grid;
+    line-height: 50px;
+    color: lightcoral;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;;
+}
+.COLUMN1{
+    position: absolute;
+    left: 12cm;
+}
+.COLUMN2{
+    position: absolute;
+    left: 2cm;
+}
+.COLUMN3{
+    position: absolute;
+    right: 12cm;
+}
+.COLUMN4{
+    position: absolute;
+    right: 2cm;
+}
+footer>h6{
+    color: yellow;
+    font-family: 'Edu QLD Beginner', cursive;
+    position: absolute;
+    top: 62.4cm;
+    font-size: 1em;
+    left: 16.5cm;
+    font-size: 1em;
+}
+/* Making site little responsive */
+@media screen and (max-width: 1000px){
+    header{
+        background-color: red;
+    }
+    header > nav {
+        color: #000;
+    }
+}
+@media screen and (max-width: 1024px){
+    aside{
+      grid-template-columns: 100%;
+    }
+}
+@media screen and (max-width: 1098px){
+    .example-1 div{
+        padding: 15px;
+    }
+    .example-2,
+    .example-1{
+        grid-template-columns: 100%;
+    }
+    .example-2>div+div>figure{
+        width: 100px;
+        height: 100px;
+    }
+    .example-3 > div:nth-child(1){
+        order: 2;
+    }
+    .example-3 > div:nth-child(2){
+        order: 1;
+    }
+    .example-3>div:nth-child(4){
+        order: 3;
+    }
+    .example-3>div>:nth-child(3){
+        order: 4;
+    }
+    footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .COLUMN1{
+        order: 1;
+    }
+    .COLUMN2{
+        order: 2;
+    }
+    .COLUMN3{
+        order: 3;
+    }
+    .COLUMN4{
+        order: 4;
+    }
+}
+@media screen and (max-width:1120px){
+    .grid{
+        grid-template-areas: 
+        "header header header header"
+        "main main main main"
+        "aside aside aside aside"
+        "footer footer footer footer";
+    }
+}
+/**********************************************Editing the About PAGE********************************************/
+
+body{
+    margin-top: -20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: -5px;
+}
+.hero{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.sc1{
+    margin-top: 12%;
+}
+.sc1>div>img,.sc2>div>img,.sc3>div>img,.sc4>div>img,.sc5>div>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+}
+.heading{
+    font-size: 3em;
+    text-align: center;
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.para{
+    text-align: center;
+    font-size: 1.2em;
+}
+/********************************************************Editing poduct site****************************************/
+.flex{
+    background-color: #d7c49eff;
+    border: 10px;
+    align-items: center;
+}
+.flex>header{
+    margin-top: -133px;
+}
+.row1>div>img,.row2>div>img,.row3>div>img,.row4>div>img,.row5>div>img,.row6>div>img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 400px;
+}
+.row1{
+    margin-top: 10%;
+}
+.row1>div+div, .row2>div+div, .row3>div+div, .row4>div+div, .row5>div+div, .row>div+div{
+    text-align: center;
+    color: #3e6074;
+}
+/* Subheading */
+.sub{
+    color: indigo;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Square Peg', cursive;
+    font-size: 3em;
+}
+/* Mainheading */
+.main-head{
+    text-align: center;
+    color: #b2101f;
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+}
+/************************************************************* contact us css *********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    /* directly importing google fonts */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+/* 
+body of contact us */
+.body{
+  min-height: 100vh;
+  width: 100%;
+  background: #c8e8e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title-text{
+    margin-top: 14%;
+    color: #05386B;
+    font-size: 3em;
+}
+.details{
+    color: chocolate;
+    font-size: 1.3em;
+}
+.container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); */
+}
+.container .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Editing the left side of contact us */
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details .info{
+  font-size: 14px;
+  color: green;
+}
+/* Editing the right side */
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #17252A;
+  cursor: pointer;
+}
+/* End of CSS */

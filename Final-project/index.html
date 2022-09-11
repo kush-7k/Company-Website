@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--Head element containing the title and other info-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Home-BettyCrocker</title>
+        <meta name="description" content="This is the final project of the HTML">
+        <meta name="robots" content="noindex, nofollow">
+        <link href="https://fonts.googleapis.com/css2?family=Gulzar&family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap" rel="stylesheet">
+        <!--Adding CSS file-->
+        <link rel="stylesheet" href="./css/style.css">
+        <!--Adding variety of fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+        <!--Our JS file-->
+        <script src="./js/custom-js.js"></script>
+    </head>
+    <!--End of head-->
+    <body class="grid">
+        <!--Grid class containing global header , footer and main-->
+        <header id="gHeader">
+        </header>
+        <main>
+            <!--Main contains intro of company with some pics-->
+            <section class="example example-1">
+                <div>
+                    <!--Main slogan-->
+                    <h1>All of you who like to minister to your dear ones by serving them good food</h1>
+                </div>
+            </section>
+            <section class="example example-2">
+                <div>
+                    <!--An Introduction of Company at a glance-->
+                    <h2>Preface</h2>
+                    <p>For nearly a century, Betty Crocker has been America's source for modern 
+                        cooking instruction and trusted recipe development. That rich hertiage and 
+                        culinary knowledge lives on in our commitment to celebrate the Betty in all of us — by
+                         sharing our passion for food, valuable test-kitchen wisdom and lifestyle expertise — straight 
+                         from our kitchen to yours. Also, get our cookbook and enjoy the special dishes designed by our 
+                         experts and have a quality time with your loved ones</p>
+                    <h2>Legacy</h2>
+                    <p>The Minneapolis suburb of Golden Valley, Minnesota, where General Mills is headquartered, has a street named Betty Crocker Drive.
+                        There are a number of Betty Crocker-branded products, including plastic food containers and measuring cups, and a line of
+                        small appliances such as popcorn poppers and sandwich makers.In 2006, the Betty Crocker catalog operation went out of business with
+                         all of its inventory on sale. Points were redeemable until December 15, 2006. A new online store was launched in April 
+                         2007 but discontinued sometime thereafter.
+                    </p>
+                    
+                </div>
+                <div>
+                    <!--Adding some pics-->
+                    <figure>
+                        <img src="./img/cookbook.png" alt="image-1">
+                        <figcaption>cookbook</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="example example-3">
+                <div>
+                <h2>With Betty by your side, you've got it made.</h2>
+                <p>The secret ingredient is right in your inbox! Tasty trends, trusted tips and knock-it-out-of-the-park recipes you can turn to again and again.</p>
+                <form action="index.html">
+                    <!--Using button to make site attractive and also using some Javascript-->
+                <input type="email" class="boxs" name="email" placeholder="Your Email" required>
+                <button type="button" class="ch" onclick='document.getElementById("Thankyou").innerHTML ="Thank you for signing up !"'>Sign Up</button>
+                <p id="Thankyou"></p>
+                <script>document.getElementById("Thankyou").style.color="#fff";</script>
+                </form>
+                <p>Sign into the betty crocker's official website and get the latest updates on our products and also There are latest announcements
+                    for discounts and launching of new items and also you can earn extra benefits on each product of Betty Crocker by getting the 5% 
+                    discount as a member of Betty Crocker's Community
+                </p>
+                </div>
+                <div class="h4">
+                    <h4 style="font-family: 'Edu QLD Beginner', cursive">Try our Most Loved product by the Customer! DunkAroos</h4>
+                </div>
+                <div>
+                    <figure>
+                        <img src="./img/image-2.png" alt="image-2">
+                        <figcaption>dunkAroos! Mixed with lots of LOVE</figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <p>Dunkaroos are a snack food from Betty Crocker, first launched in 1990. It consists of a snack-sized package containing cookies and frosting;
+                        as the name implies, the cookies are meant to be dunked into the frosting before eating. Individual snack packages contain about ten 
+                        small cookies and one cubic inch of frosting. The cookies are made in a variety of shapes, including a circle with an uppercase "D" 
+                        in the center (the only shape featured in the 2020 version), feet, the mascot in different poses, and a hot air balloon.</p>
+                </div> 
+            </section>
+        </main>
+        <aside>
+            <!--Aside element containg reviews and news about the company-->
+            <div class="ad1">
+            <h3>Story of our Betty Crocker.</h3>
+            <p>Betty Crocker is not a real person but has been created with imagination. Actresses once portrayed her on radio shows and on television answering the questions and fixing 
+                the problems of real mid-century housewives. But Betty herself is a fictional creation, one that 
+                looms over the American cultural identity like a housewife's hallucination of her kids' favorite 
+                cartoon character (that just happens to have a great recipe for biscuits).</p>
+            <h3>Official Reviews of our CookBook</h3>
+            <p>The food that resulted from these recipes was the best, most solidly American food I have eaten in a really long time. 
+                The macaroni and cheese was just plain macaroni and cheese. It didn't have anything extra it in, no tricks up its sleeve, 
+                no bacon, no Sriracha. Just elbow macaroni, white sauce, and sharp cheddar. It was achingly perfect in its simplicity.Also, it 
+            was easy to make delicious and simple recipes by taking guidance of the book.</p>
+            <h3>What makes our product so Tasty!!</h3>
+                    <p>The tremendous amount of support by our customers and fans has uplifted the betty crocker even when the time
+                        was not really good; the trust and love by fans has always been a motivating role for us and we APPRECIATE to our
+                        each and every customer for keeping faith in us everytime. Therefore, we take care of our product by giving them special
+                        treatment and hence the products are always fresh and smells good.
+                    </p>
+                    <!---USing button and asking question to the user -->
+                    <h3>Do you have a Coupon code?</h3>
+                    <form action="index.html">
+                        <input type="text" name="Code" placeholder="Enter the code" required>
+                    <button type="submit">Submit</button>
+                    </form>
+                    
+                    <p>The Newest coupon code can get you exciting deals on the product site and you can get upto 50% off on purchasing
+                        our marvellous product. We always take care of our customers and think about them by bringing such
+                        an exciting deals that can bring a huge smile on each Individual's face
+                    </p>
+            </div>
+           
+            <div class="ad2">
+                <!--Another div containing 2 questions-->
+            <p id="changeTxt1">Have you tried our products made with LOVE?</p>
+            <button type="button" class="btn-1"  onclick='document.getElementById("changeTxt1").innerHTML ="That sounds Awesome!! We are thankful to you"'>YES</button>
+            <button type="button" class="btn-2" onclick='document.getElementById("changeTxt1").innerHTML ="Visit our product site and try our products you like"'>NO</button>
+            <p id="changeTxt2">Did you signed up in the website to get the latest updates and special discounts?</p>
+            <button type="button" class="btn-1" onclick='document.getElementById("changeTxt2").innerHTML ="Thank you for supporting us!"'>YES</button>
+            <button type="button" class="btn-2" onclick='document.getElementById("changeTxt2").innerHTML ="Check the Homepage and sign up with your email and get updated."'>NO</button>
+            <script>
+                //javascript to give site good finish
+                document.getElementById("changeTxt1").style.color= "#ff7f00";
+                document.getElementById("changeTxt1").style.fontSize="1.2em";
+                document.getElementById("changeTxt2").style.fontSize="1.2em";
+                document.getElementById("changeTxt2").style.color = "#ff7f00";
+                document.getElementById("changeTxt1").style.fontFamily ="sans serif";
+                document.getElementById("changeTxt2").style.fontFamily="verdana, sans serif";
+            </script>
+            </div>
+        </aside>
+        <!--End of aside-->
+        <footer id="gFooter">
+     <!--Global footer-->
+        </footer>
+    </body>
+</html>
+<!--End of html-->
